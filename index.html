@@ -1,191 +1,155 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ceegentle - Professional Brand</title>
-    <style>
-        /* Reset */
-        * {
-            margin: 0; padding: 0; box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #1f2937;
-            color: white;
-            padding: 15px 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        /* Logo */
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: #e0aaff;
-            cursor: default;
-        }
-
-        /* Navigation Menu */
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #e0aaff;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        /* Gallery */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .gallery img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Advertisement Section */
-        .advertisement {
-            background-color: #e0aaff;
-            color: #1f2937;
-            padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            font-weight: 700;
-            font-size: 1.4rem;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 15px rgba(224,170,255,0.6);
-        }
-
-        /* Pricing */
-        .pricing {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            padding: 30px;
-            text-align: center;
-        }
-
-        .pricing h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #6b21a8;
-        }
-
-        .pricing p {
-            font-size: 1.25rem;
-            color: #4b5563;
-            margin-bottom: 25px;
-        }
-
-        .price-tag {
-            font-size: 3rem;
-            font-weight: 800;
-            color: #a855f7;
-            margin-bottom: 10px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #1f2937;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 60px;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 600px) {
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 10px;
-            }
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>หมูปิ้งหลังมช. | ขายหมูปิ้งสดใส</title>
+  <style>
+    body {
+      font-family: "Sarabun", sans-serif;
+      background: #fff9f0;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: #ff6f61;
+      padding: 15px;
+      text-align: center;
+      color: white;
+    }
+    header img.logo {
+      max-height: 80px;
+      vertical-align: middle;
+    }
+    header h1 {
+      display: inline-block;
+      margin-left: 10px;
+      font-weight: 700;
+      font-size: 28px;
+      vertical-align: middle;
+      letter-spacing: 2px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .product {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .product img {
+      width: 180px;
+      height: 140px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 2px solid #ff6f61;
+    }
+    .product-details {
+      flex: 1;
+    }
+    .product-details h2 {
+      color: #ff4f3d;
+      margin-top: 0;
+      font-size: 22px;
+    }
+    .price {
+      font-weight: 700;
+      color: #e63946;
+      font-size: 18px;
+      margin-top: 8px;
+    }
+    .description {
+      margin-top: 8px;
+      font-size: 16px;
+      color: #555;
+    }
+    .advertisement {
+      background: #ffefef;
+      border-left: 5px solid #ff6f61;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 18px;
+      color: #d62828;
+      text-align: center;
+      border-radius: 8px;
+    }
+    footer {
+      background: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+    }
+    footer a {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    @media(max-width: 600px){
+      .product {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .product img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">Ceegentle</div>
-    <nav>
-        <ul>
-            <li><a href="#home">หน้าแรก</a></li>
-            <li><a href="#gallery">แกลเลอรี่</a></li>
-            <li><a href="#pricing">ราคา</a></li>
-        </ul>
-    </nav>
+  <img src="https://i.imgur.com/bo7pYbi.png" alt="หมูปิ้งหลังมช. โลโก้" class="logo" />
+  <h1>หมูปิ้งหลังมช.</h1>
 </header>
 
-<main>
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="รูปสินค้า 1" />
-        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="รูปสินค้า 2" />
-        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="รูปสินค้า 3" />
-        <img src="https://images.unsplash.com/photo-1502767089025-6572583495b0?auto=format&fit=crop&w=600&q=80" alt="รูปสินค้า 4" />
-    </section>
+<div class="container">
 
-    <!-- Advertisement -->
-    <section class="advertisement">
-        โปรโมชั่นพิเศษ! ซื้อวันนี้รับส่วนลด 20% สำหรับสินค้าทุกรายการ
-    </section>
+  <div class="product">
+    <img src="images (2).jpg" alt="หมูปิ้งสูตรต้นตำรับ" />
+    <div class="product-details">
+      <h2>หมูปิ้งสูตรต้นตำรับ</h2>
+      <p class="price">ราคาไม้ละ 15 บาท</p>
+      <p class="description">หมูปิ้งนุ่ม ๆ หมักด้วยสูตรลับเฉพาะของร้าน กลิ่นหอมชวนหิว เหมาะกับนักศึกษาที่ต้องการพลังงานเร็ว ๆ</p>
+    </div>
+  </div>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
-        <h2>ราคาสินค้า Ceegentle</h2>
-        <p>สินค้าทุกชิ้นผลิตด้วยคุณภาพสูงสุดเพื่อความพึงพอใจของคุณ</p>
-        <div class="price-tag">฿1,999</div>
-        <p>ราคานี้รวมค่าจัดส่งแล้ว</p>
-    </section>
-</main>
+  <div class="product">
+    <img src="images.jpg" alt="หมูปิ้งรสเผ็ด" />
+    <div class="product-details">
+      <h2>หมูปิ้งรสเผ็ด</h2>
+      <p class="price">ราคาไม้ละ 18 บาท</p>
+      <p class="description">สำหรับคนชอบรสจัดจ้าน หมูปิ้งรสเผ็ดร้อน เพิ่มความสดชื่นด้วยน้ำจิ้มซีฟู้ดสูตรเด็ด</p>
+    </div>
+  </div>
+
+  <div class="advertisement">
+    โปรโมชั่นพิเศษ! ซื้อหมูปิ้ง 10 ไม้ แถมน้ำเก็กฮวยฟรี 1 แก้ว สำหรับนักศึกษามช. เท่านั้น! 📣🎉
+  </div>
+
+  <section>
+    <h2>ช่องทางการติดต่อ</h2>
+    <p>📱 โทร: 099-123-4567</p>
+    <p>📍 สั่งซื้อผ่าน Facebook: <a href="https://www.facebook.com/mookinglumch" target="_blank" rel="noopener">หมูปิ้งหลังมช.</a></p>
+    <p>📸 Instagram: <a href="https://www.instagram.com/mookinglumch" target="_blank" rel="noopener">@mookinglumch</a></p>
+    <p>📧 Email: contact@mookinglumch.com</p>
+  </section>
+
+</div>
 
 <footer>
-    &copy; 2025 Ceegentle. All rights reserved.
+  <p>หมูปิ้งหลังมช. | อร่อย สดใส ถูกใจนักศึกษามช. ทุกคน</p>
 </footer>
-
-</body>
-</html>
-
 
 </body>
 </html>
