@@ -3,97 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>หมูปิ้ง มช. & GitHub Workflow Example</title>
+  <title>Ceegentle หมูปิ้ง มช.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Sarabun', sans-serif; background: #fff9f5; margin: 0; padding: 0; }
-    header { background: #d94f30; color: white; text-align: center; padding: 20px; }
-    h1 { margin: 0; font-size: 2.5em; }
-    .subtitle { font-size: 1.2em; margin-top: 5px; }
-    .menu { display: flex; flex-wrap: wrap; justify-content: center; padding: 30px 10px; gap: 20px; }
-    .item { background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            width: 280px; text-align: center; padding: 15px; transition: transform 0.2s; }
-    .item:hover { transform: scale(1.03); }
-    .item img { width: 100%; height: auto; border-radius: 8px; }
-    .item h2 { margin: 15px 0 5px; color: #d94f30; }
-    .price { font-size: 1.2em; color: #333; }
-    .ad-section { background: #fff3e6; text-align: center; padding: 30px 10px; margin-top: 40px; }
-    .ad-section h2 { color: #d94f30; margin-bottom: 10px; }
-    .ad-section p { font-size: 1em; color: #444; }
-    .code-section { background: #f4f4f4; padding: 20px; border-radius: 10px;
-                    margin: 40px 10px; overflow-x: auto; font-family: monospace; white-space: pre; }
-    .code-section h2 { color: #333; }
-    .workflow-img { max-width: 90%; border: 1px solid #ccc; border-radius: 10px; margin-top: 10px; }
-    footer { background: #333; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+    body {
+      margin: 0;
+      font-family: 'Sarabun', sans-serif;
+      background-color: #fff8f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #b91c1c;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .hero {
+      background: url('https://cdn.pixabay.com/photo/2020/07/10/17/39/grill-5390914_1280.jpg') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.6em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .item {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 280px;
+      transition: transform 0.2s;
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+    }
+
+    .item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .item .info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .item h2 {
+      margin: 10px 0 5px;
+      color: #b91c1c;
+    }
+
+    .price {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .ad-section {
+      background-color: #ffe6cc;
+      text-align: center;
+      padding: 30px 20px;
+      margin: 40px 0;
+    }
+
+    .ad-section h2 {
+      color: #c2410c;
+      margin-bottom: 10px;
+    }
+
+    .ad-section p {
+      font-size: 1.1em;
+    }
+
+    footer {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        font-size: 1.8em;
+        height: 180px;
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .item {
+        width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <h1>หมูปิ้ง มช.</h1>
-    <div class="subtitle">อร่อยง่าย ใกล้คุณ ที่หน้ามช.!</div>
+    <img src="https://img.freepik.com/premium-vector/pig-cartoon-logo-bbq-grill-meat-skewer-food-brand_582637-214.jpg" alt="โลโก้ Ceegentle" />
+    <h1>Ceegentle หมูปิ้ง มช.</h1>
   </header>
 
+  <!-- Hero Banner -->
+  <div class="hero">
+    อร่อยจริง สะอาดจริง ที่ มช.
+  </div>
+
+  <!-- เมนูสินค้า -->
   <section class="menu">
     <div class="item">
-      <img src="https://cdn.pixabay.com/photo/2020/09/05/14/26/grilled-pork-5546130_1280.jpg" alt="หมูปิ้งคลาสสิค">
-      <h2>หมูปิ้งคลาสสิค</h2>
-      <p class="price">5 บาท/ไม้</p>
+      <img src="https://cdn.pixabay.com/photo/2020/09/05/14/26/grilled-pork-5546130_1280.jpg" alt="หมูปิ้งคลาสสิค" />
+      <div class="info">
+        <h2>หมูปิ้งคลาสสิค</h2>
+        <div class="price">5 บาท/ไม้</div>
+      </div>
     </div>
     <div class="item">
-      <img src="https://cdn.pixabay.com/photo/2020/07/10/17/39/grill-5390914_1280.jpg" alt="หมูปิ้งสูตรหวาน">
-      <h2>หมูปิ้งสูตรหวาน</h2>
-      <p class="price">6 บาท/ไม้</p>
+      <img src="https://cdn.pixabay.com/photo/2020/07/10/17/40/grilled-pork-5390915_1280.jpg" alt="หมูปิ้งหวานนุ่ม" />
+      <div class="info">
+        <h2>หมูปิ้งหวานนุ่ม</h2>
+        <div class="price">6 บาท/ไม้</div>
+      </div>
     </div>
     <div class="item">
-      <img src="https://cdn.pixabay.com/photo/2020/07/10/17/40/grilled-pork-5390915_1280.jpg" alt="หมูปิ้งพริกไทยดำ">
-      <h2>หมูปิ้งพริกไทยดำ</h2>
-      <p class="price">7 บาท/ไม้</p>
+      <img src="https://cdn.pixabay.com/photo/2022/01/14/05/56/meat-skewer-6935925_1280.jpg" alt="หมูปิ้งพริกไทยดำ" />
+      <div class="info">
+        <h2>หมูปิ้งพริกไทยดำ</h2>
+        <div class="price">7 บาท/ไม้</div>
+      </div>
     </div>
   </section>
 
+  <!-- โฆษณาโปรโมชั่น -->
   <section class="ad-section">
-    <h2>🔥 โปรโมชั่นวันนี้ 🔥</h2>
-    <p>ซื้อครบ 10 ไม้ แถมฟรี 1 ไม้! สำหรับนักศึกษา มช. เท่านั้น<br />แสดงบัตรนักศึกษา ก่อนชำระเงิน</p>
+    <h2>🎉 โปรพิเศษสำหรับนักศึกษา มช. 🎉</h2>
+    <p>ซื้อครบ 10 ไม้ แถมฟรีอีก 1 ไม้! <br> เพียงแสดงบัตรนักศึกษาก่อนชำระเงิน</p>
   </section>
 
-  <!-- ส่วนแสดงเนื้อหา YML -->
-  <section class="code-section">
-    <h2>🔧 GitHub Workflow (azure-static-web-apps-blue-bay) :</h2>
-    <code>name: Azure Static Web Apps CI/CD
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - main
-
-jobs:
-  build_and_deploy_job:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Build And Deploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: upload
-          app_location: '/'
-          api_location: 'api'
-          app_artifact_location: 'dist'
-  </code>
-
-    <!-- แทรกภาพ Workflow สมมติ -->
-    <img src="https://via.placeholder.com/800x300.png?text=GitHub+Workflow+Screenshot" alt="GitHub Workflow Screenshot" class="workflow-img" />
-  </section>
-
+  <!-- Footer -->
   <footer>
-    &copy; 2025 หมูปิ้ง มช. | เปิดทุกวัน 05:00 - 10:00 น. หน้า มช. ประตูคณะวิศวะ
+    © 2025 Ceegentle หมูปิ้ง มหาวิทยาลัยเชียงใหม่ | เปิดทุกวัน 05:00 - 10:00 น. บริเวณประตูคณะวิศวกรรมศาสตร์
   </footer>
 
 </body>
 </html>
-
