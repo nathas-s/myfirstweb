@@ -1,6 +1,133 @@
-<html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หมูปิ้ง มช.</title>
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #fff9f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d94f30;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 10px;
+      gap: 20px;
+    }
+
+    .item {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .item h2 {
+      margin: 15px 0 5px;
+      color: #d94f30;
+    }
+
+    .price {
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .ad-section {
+      background-color: #fff3e6;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 40px;
+    }
+
+    .ad-section h2 {
+      color: #d94f30;
+      margin-bottom: 10px;
+    }
+
+    .ad-section p {
+      font-size: 1em;
+      color: #444;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
 <body>
-<h1>Your Name Here</h1>
-<h2> Your student code here</h2>
+
+  <header>
+    <h1>หมูปิ้ง มช.</h1>
+    <div class="subtitle">อร่อยง่าย ใกล้คุณ ที่หน้ามช.!</div>
+  </header>
+
+  <section class="menu">
+    <div class="item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Thai_grilled_pork_skewers_%28moo_ping%29.jpg" alt="หมูปิ้งคลาสสิค">
+      <h2>หมูปิ้งคลาสสิค</h2>
+      <p class="price">5 บาท/ไม้</p>
+    </div>
+
+    <div class="item">
+      <img src="https://cdn.pixabay.com/photo/2020/09/05/14/26/grilled-pork-5546130_1280.jpg" alt="หมูปิ้งสูตรหวาน">
+      <h2>หมูปิ้งสูตรหวาน</h2>
+      <p class="price">6 บาท/ไม้</p>
+    </div>
+
+    <div class="item">
+      <img src="https://cdn.pixabay.com/photo/2020/07/10/17/39/grill-5390914_1280.jpg" alt="หมูปิ้งพริกไทยดำ">
+      <h2>หมูปิ้งพริกไทยดำ</h2>
+      <p class="price">7 บาท/ไม้</p>
+    </div>
+  </section>
+
+  <section class="ad-section">
+    <h2>🔥 โปรโมชั่นวันนี้ 🔥</h2>
+    <p>ซื้อครบ 10 ไม้ แถมฟรี 1 ไม้! สำหรับนักศึกษา มช. เท่านั้น<br>แสดงบัตรนักศึกษาก่อนชำระเงิน</p>
+  </section>
+
+  <footer>
+    &copy; 2025 หมูปิ้ง มช. | เปิดทุกวัน 05:00 - 10:00 น. หน้า มช. ประตูคณะวิศวะ
+  </footer>
+
 </body>
 </html>
